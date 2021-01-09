@@ -51,7 +51,6 @@ var orm = {
 
 		connection.query(queryString, vals, function(err, result) {
 			if (err) throw err;
-			// send the query result back to the callback function
 			cb(result);
 		});
 	},

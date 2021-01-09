@@ -11,11 +11,8 @@ $.ajax("/burgers/updateOne/"+id, {
   }).then(
     function() {
       console.log("you ate da burger");
-    
+     location.reload();
     }
   );
 })  
 // })
-//   
-      // Reload the page to get the updated list
-    //   location.reload();
