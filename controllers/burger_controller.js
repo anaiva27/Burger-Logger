@@ -23,12 +23,10 @@ router.post('/burgers/insertOne', function(req, res) {
 
 // route to update a burger status 
 router.put('/burgers/updateOne/:id', function(req, res) {
-	var condition = 'id = ' + req.params.id;
-	console.log('condition', condition);
-
-	burger.updateOne({devoured: req.body.devoured}, condition, function() {
-		console.log("Am I hitting it?")
-		res.redirect('/index');
+	burger.updateOne(req.params.id, function(result) {
+		console.log("******result: ",result);
+		res.sendStatus(200);
+		//res.redirect('/index');
 	});
 });
 

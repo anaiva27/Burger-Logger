@@ -12,16 +12,16 @@
 		</div>
 	</div>
 
-	<div class="row">
+	<div class="row burger-container">
 		<div class="col-md-5">
 			<h3>Uneaten Burgers</h3>
 			<ul>
 				{{#each burgers}}
 					{{#unless this.devoured}}
-						<li id="list">
+						<li>
 							<h5>{{this.id}}.{{this.burger_name}}
 								<form>	
-									<button type='submit' id="button" class="btn btn-default" data-id="{{this.id}}">EAT THIS!</button>
+									<button type='submit' id={{this.id}} class="eat-burger-btn btn btn-default" data-id="{{this.id}}">EAT THIS!</button>
 								</form>
 							</h5>
 						</li>
