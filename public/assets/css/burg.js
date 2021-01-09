@@ -10,7 +10,7 @@ $.ajax("/burgers/updateOne/"+id, {
     data: {"devoured":true}
   }).then(
     function() {
-      console.log("created new burger");
+      console.log("you ate da burger");
     
     }
   );
