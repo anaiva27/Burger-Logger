@@ -18,7 +18,7 @@
 			<ul>
 				{{#each burgers}}
 					{{#unless this.devoured}}
-						<li>
+						<li id="list">
 							<h5>{{this.id}}.{{this.burger_name}}
 								<form>	
 									<button type='submit' id="button" class="btn btn-default" data-id="{{this.id}}">EAT THIS!</button>
