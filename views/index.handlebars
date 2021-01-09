@@ -29,7 +29,7 @@
 							<h5>{{this.id}}.{{this.burger_name}}
 								{{!-- <form action='burgers/updateOne/{{this.id}}?_method=PUT' method='POST'> --}}
 								<form>	<input type='hidden' name='devoured' value='true'>
-									<button type='submit' id="button" class="btn btn-default">EAT THIS!</button>
+									<button type='submit' id="button" class="btn btn-default" data-id="{{this.id}}">EAT THIS!</button>
 								</form>
 							</h5>
 						</li>
