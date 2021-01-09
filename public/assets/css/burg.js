@@ -1,5 +1,4 @@
 // Send the PUT request.
-// $(document).on("ready", function(){ 
 $("#button").on("click", function(event) {
     event.preventDefault();
     console.log("I am here");
@@ -15,4 +14,3 @@ $.ajax("/burgers/updateOne/"+id, {
     }
   );
 })  
-// })
