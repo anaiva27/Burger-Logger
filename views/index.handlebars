@@ -1,11 +1,10 @@
 <div class="container">
-
-	<div class="row red justify-content-center">
+{{!-- header and image containers --}}
+	<div class="row justify-content-center">
 		<div class="col-md-10 align-items-center">
 			<img src="/assets/burger1.jpg" alt="burger" class="img-responsive">
 		</div>
 	</div>
-
 	<div class="row justify-content-center">
 		<div class="col-md-10">
 			<h1 class="text-center">EAT-DA-BURGER!</h1>
@@ -13,7 +12,6 @@
 	</div>
 
 	<div class="row burger-container justify-content-center">
-		{{!-- <div class="col-md-2"></div> --}}
 		<div class="col-md-5">
 			<h3>FRESHLY MADE BURGERS</h3>
 			<ul>
@@ -21,9 +19,7 @@
 					{{#unless this.devoured}}
 						<li>
 							<h5>{{this.id}}.{{this.burger_name}}
-								<form>	
-									<button type='submit' id={{this.id}} class="eat-burger-btn btn btn-default" data-id="{{this.id}}">EAT THIS!</button>
-								</form>
+									<button type='submit' id={{this.id}} class="eat-burger-btn btn btn-danger" data-id="{{this.id}}">DEVOUR!</button>
 							</h5>
 						</li>
 					{{/unless}}
@@ -44,14 +40,14 @@
 			</ul>
 		</div>
 	</div>
-	<br><br>
+	<br>
 	<div class="row">
 		<div class="col-md-12 text-center">
 			<form class="create-update-form" action="burgers/insertOne" method="POST">
-				<div class="form-group">
-					<textarea type="text" name="name"></textarea><br>
-					<button class="btn btn-default" type="submit">Submit</button>
-					<h5 class="text-center">Enter a burger you are craving and click Submit!</h5>
+				<div>
+					<textarea type="text" placeholder="Type..." name="name"></textarea><br>
+					<button class="btn btn-danger" type="submit">Add to the menu</button>
+					<h5 class="text-center">Invent a burger you are craving and click the button!</h5>
 				</div>
 			</form>
 		</div>
