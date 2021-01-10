@@ -1,3 +1,5 @@
+ [Link to my Portfolio, featuring my lastest apps](file:///D:/SCHOOL/Homework2/My-portfolio/portfolio.html)
+
 # Burger-Logger
  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
@@ -5,11 +7,11 @@
   * [Description](#Description)
   * [Installation](#Installation)
   * [Usage](#Usage)
-  * [Testing](#Testing)
   * [License](#License)
 
 ## Description
-This application allows users to manage company's departments and employees through command line in the Node by iterating through options like view/add/delete departments or employee's positions, view/add/delete/update employees or thier roles. Everything is displayed in multiple tables that are stored in a database and seeded using SQL programming language. <br>
+This application allows users to manipulate items (burgers) using a variety of technologies and programming languages such as JavaScript, SQL, jQuery, HTML, CSS, API requests, ORM, Ajax calls, Handlebars, Express.js and Node.js. The repository is organized according to MVC framework standarts. This full-stack app also introduces fun and intuitive interface.
+<br>
 
 ## Installation
 To run this application, the user will need to install Node.js, and after that initialize the folder containing the application by typing `npm init -y` in the command line. The `package.json` will hold various metadata relevant to the project. This file is used to give information to npm that allows it to identify the project as well as how to handle the project's dependencies. Then the user can install  all of the required dependencies by typing `npm i`. The project was build with JavaScript and SQL programming languages. To successfully manage the employees and the whole system, the user has to run the SQL script `schema.sql` located in the `db` folder in the root directory.
