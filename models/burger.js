@@ -1,5 +1,6 @@
 var orm = require("../config/orm.js");
 
+// functions for interactions with the database
 var burger = {
   // selectAll for getting all the burgers
   selectAll: function (cb) {
@@ -20,5 +21,5 @@ var burger = {
   },
 };
 
-// export burger back to the controller
+// export var burger back to the controller
 module.exports = burger;
