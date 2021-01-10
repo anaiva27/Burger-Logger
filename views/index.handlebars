@@ -1,20 +1,21 @@
 <div class="container">
 
-	<div class="row">
-		<div class="col-md-12">
-			<img src="/assets/burger1.jpg" alt="burger" class="img-responsive center-block">
+	<div class="row red justify-content-center">
+		<div class="col-md-10 align-items-center">
+			<img src="/assets/burger1.jpg" alt="burger" class="img-responsive">
 		</div>
 	</div>
 
-	<div class="row">
-		<div class="col-md-12">
-			<h1 class="text-center text-danger">Eat-Da-Burger</h1>
+	<div class="row justify-content-center">
+		<div class="col-md-10">
+			<h1 class="text-center">EAT-DA-BURGER!</h1>
 		</div>
 	</div>
 
-	<div class="row burger-container">
+	<div class="row burger-container justify-content-center">
+		{{!-- <div class="col-md-2"></div> --}}
 		<div class="col-md-5">
-			<h3>Uneaten Burgers</h3>
+			<h3>FRESHLY MADE BURGERS</h3>
 			<ul>
 				{{#each burgers}}
 					{{#unless this.devoured}}
@@ -30,9 +31,8 @@
 			</ul>
 		</div>
 
-		<div class="col-md-2"></div>
 		<div class="col-md-5">
-			<h3 class="text-muted">Eaten Burgers</h3>
+			<h3>DEVOURED BURGERS</h3>
 			<ul>
 				{{#each burgers}}
 					{{#if this.devoured}}

@@ -1,10 +1,14 @@
  /* styles for the index page and the image */
-body{
+body {
 	background-color: rgb(253, 253, 86);
 	margin-top: 15px;
 }
 
-img{
+.red {
+	background-color: black;
+}
+img {
 	width: 900px;
 	height: auto;
 }
+
