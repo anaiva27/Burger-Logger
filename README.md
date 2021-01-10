@@ -1,4 +1,5 @@
- [Link to my Portfolio, featuring my lastest apps](file:///D:/SCHOOL/Homework2/My-portfolio/portfolio.html)
+ [Link to my Portfolio, featuring my lastest apps](https://anaiva27.github.io/My-portfolio/portfolio.html)
+ [Link to the deployed app](https://eat-the-burger-yum.herokuapp.com/)
 
 # Burger-Logger
  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
