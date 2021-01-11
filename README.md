@@ -1,4 +1,4 @@
- [Link to my Portfolio, featuring my lastest apps](https://anaiva27.github.io/My-portfolio/portfolio.html)
+ [Link to my Portfolio, featuring my lastest apps](https://anaiva27.github.io/My-portfolio/portfolio.html) <br>
  [Link to the deployed app](https://eat-the-burger-yum.herokuapp.com/)
 
 # Burger-Logger
@@ -15,7 +15,8 @@ This application allows users to manipulate items (burgers) using a variety of t
 <br>
 
 ## Installation
-To run this application, the user will need to install Node.js, and after that initialize the folder containing the application by typing `npm init -y` in the command line. The `package.json` will hold various metadata relevant to the project. This file is used to give information to npm that allows it to identify the project as well as how to handle the project's dependencies. Then the user can install  all of the required dependencies by typing `npm i`. The project was build with JavaScript and SQL programming languages. To successfully manage the employees and the whole system, the user has to run the SQL script `schema.sql` located in the `db` folder in the root directory.
+Eat-Da-Burger application is deployed on Heroku platform, utilizing JawsDB add-on. The webpage can be accessed by following the link at the top og the page.
+To run this application on a local machine, the user will need to install Node.js and MySQL Workbench, then initialize the folder containing the application by typing `npm init -y` and `npm i` in the command line to install required dependencies such as `mysql, express, bodyParser`. The `package.json` will hold various metadata that's relevant to the project. Also the user has to run the SQL script `schema.sql`  and `seeds.sql` located in the `db` folder in the root directory.
 
 ```
 npm init -y 
@@ -25,20 +26,20 @@ npm i
 
 ## Usage 
 
-The user can invoke this application by opening the app.js file in the Node command line by typing `node app.js`. Then the user will be prompted with a series of questions about how he would like to manipulate the data: view/add/remove departments, view/add/remove roles, view/add/remove/update employees. <br>
-Viewing options will display tables Departments(with columns `id, name`), Roles(with columns `id, title, salary, department_id`), Employees(with columns `id, first&last name, role_id, manager_id`). After choosing an option to add employee/role/department the user will be prompted with a series of questions to gather the info to add it to the table. Everytime the user will choose to add an employee, role or department a row containing the info will appear at the bottom of the chosen table. When the option `update` is chosen, the user will see a list of the options(employees) that can be updated. After every option the user will be presented with the main menu every single time until the option `Exit the application` is chosen.
+After user clicks the link, he will be directed to the index page with 2 tables containing names of the burgers. Underneath there's an emplty text field, where user can input the name of the burger and after clicking the submit button, the name of the burger will appear on the left side of the screen, in the first table. Right next topthe burger the will be a red button `Devour`. When the user will click that button, the burger will move to the table on the right, as it changes the devoured status from `false` to `true` in the database called `burgers_db`.<br>
+
 <br>
 Screenshots:<br>
-The initial prompt: <br> 
+User inputs a burger: <br> 
 
-![Multiple choice](./assets/s1.jpg) <br>
+![User's input](./public/assets/img/s1.jpg) <br>
 <br>
-Table with all employees: <br>
+The item moved to the first table: <br>
 
-![Employee table](./assets/s2.jpg) <br>
+![First table](./public/assets/img/s2.jpg) <br>
 
-New employee added: <be>
-![Employee table](./assets/s3.jpg) <br>
+Then moved to the "devoured": <br>
+![Second table](./public/assets/img/s3.jpg) <br>
 <br>
 
 ## License
